@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="1" name="Delta Defense Carina Coding Challenge Tests" parallel="methods" thread-count="5">
+
+	<parameter name="suiteOwner" value="qpsdemo"/>
+	<parameter name="jenkinsJobName" value="Delta-Defense-Carina-Demo-Test"/>
+	<parameter name="jenkinsJobType" value="web"/>
+
+	<parameter name="zafira_project" value="UNKNOWN" />
+
+	<parameter name="jenkinsEnvironments" value="DEMO"/>
+
+	<test name="Navigation tests">
+		<classes>
+			<class name="com.deltadefense.carina.demo.NavigationTest" />
+		</classes>
+	</test>
+
+</suite>
